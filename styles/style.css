@@ -517,3 +517,34 @@ body {
   object-fit: cover;
 }
 
+.nav-links li a {
+  text-decoration: none;
+  color: white; /* ← ensures visibility */
+  font-weight: 500;
+  transition: color 0.3s;
+}
+body.dark-theme .nav-links li a {
+  color: white;
+}
+
+body:not(.dark-theme) .nav-links li a {
+  color: #111; /* or any readable light-mode color */
+}
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-dark,
+.btn-light {
+  padding: 0.8rem 1.4rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.hero {
+  padding: 160px 10% 100px; /* increase bottom padding */
+}
