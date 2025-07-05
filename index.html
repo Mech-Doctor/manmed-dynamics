@@ -61,6 +61,39 @@
       </div>
     </div>
   </section>
+  
+  <!-- Technologies Section -->
+  <section id="technologies" class="technologies-section" data-aos="fade-up">
+    <h2 class="section-title">Technologies <span class="gradient-text">We Use</span></h2>
+    <p class="section-subtitle">From sensors to software – bridging medicine and machines.</p>
+
+    <div class="tech-grid">
+      <div class="tech-card" data-aos="zoom-in">
+        <img src="assets/icons/ai-brain.png" alt="AI & ML">
+        <h4>AI & ML</h4>
+      </div>
+      <div class="tech-card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="assets/icons/robotic-arm.png" alt="Robotics">
+        <h4>Robotics</h4>
+      </div>
+      <div class="tech-card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="assets/icons/vision.png" alt="Computer Vision">
+        <h4>Computer Vision</h4>
+      </div>
+      <div class="tech-card" data-aos="zoom-in" data-aos-delay="300">
+        <img src="assets/icons/iot.png" alt="IoT Sensors">
+        <h4>IoT Sensors</h4>
+      </div>
+      <div class="tech-card" data-aos="zoom-in" data-aos-delay="400">
+        <img src="assets/icons/data.png" alt="Medical Data">
+        <h4>Medical Data</h4>
+      </div>
+      <div class="tech-card" data-aos="zoom-in" data-aos-delay="500">
+        <img src="assets/icons/ros.png" alt="ROS2">
+        <h4>ROS2</h4>
+      </div>
+    </div>
+  </section>
 
   <!-- Projects Section -->
   <section class="projects-section" id="projects">
@@ -150,7 +183,55 @@
       </div>
     </div>
   </section>
+  
+<!-- Partner Section -->
+<section id="partners" class="partners-section" data-aos="fade-up">
+  <h2 class="section-title">Our <span class="gradient-text">Partners/MoUs</span></h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn left" onclick="scrollPartners('left')">&#10094;</button>
 
+    <div class="carousel">
+      <div class="partner-logo active">
+        <img src="assets/partners/bmc-logo.png" alt="Partner 1">
+      </div>
+      <div class="partner-logo">
+        <img src="assets/partners/mmc-logo.png" alt="Partner 2">
+      </div>
+      <div class="partner-logo">
+        <img src="assets/partners/mims-logo.png" alt="Partner 3">
+      </div>
+    </div>
+
+    <button class="carousel-btn right" onclick="scrollPartners('right')">&#10095;</button>
+  </div>
+</section>
+
+<!-- Careers Section -->
+<section id="careers" class="careers-section" data-aos="fade-up">
+  <h2 class="section-title">Join <span class="gradient-text">Our Team</span></h2>
+  <p class="section-subtitle">Home / Careers</p>
+
+  <div class="careers-list">
+    <div class="career-card" data-aos="fade-up">
+      <h3>AI Research Intern</h3>
+      <p>Contribute to machine learning models for medical image analysis and diagnostics.</p>
+      <a href="#contact" class="btn-light">Apply Now</a>
+    </div>
+
+    <div class="career-card" data-aos="fade-up" data-aos-delay="100">
+      <h3>Frontend Web Developer</h3>
+      <p>Help design and develop user-friendly healthcare interfaces and dashboards.</p>
+      <a href="#contact" class="btn-light">Apply Now</a>
+    </div>
+
+    <div class="career-card" data-aos="fade-up" data-aos-delay="200">
+      <h3>Medical Advisor</h3>
+      <p>Provide clinical insights and validate AI tools across surgical and diagnostic domains.</p>
+      <a href="#contact" class="btn-light">Apply Now</a>
+    </div>
+  </div>
+</section>
+  
   <!-- Team Section -->
   <section id="team" class="team-section">
     <h2 class="section-title">Our <span class="gradient-text">team</span></h2>
@@ -206,29 +287,58 @@
     </form>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-left">
-        <h3>Manmed<span class="highlight">Dynamics</span></h3>
-        <p>Engineering Intelligence from Scratch to Surgery.</p>
-      </div>
-      <div class="footer-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
+ 
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Column 1: Brand -->
+    <div class="footer-column">
+      <h3>Manmed Dynamics</h3>
+      <p>Engineering Intelligence from Scratch to Surgery.</p>
       <div class="footer-socials">
-        <a href="https://linkedin.com/company/manmed-dynamics/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/" target="_blank">GitHub</a>
-        <a href="mailto:mechdoctor231@gmail.com">Email</a>
+        <a href="https://linkedin.com/in/vishwagowda" target="_blank" title="LinkedIn">🔗</a>
+        <a href="https://github.com/Mech-Doctor" target="_blank" title="GitHub">🐳</a>
+        <a href="mailto:manmeddynamics@gmail.com" title="Email">✉️</a>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Manmed Dynamics. All rights reserved.</p>
+
+    <!-- Column 2: Location -->
+    <div class="footer-column">
+      <h3>Location</h3>
+      <p>Mandya Institute of Medical Sciences<br>Mandya, Karnataka, India</p>
+      <p>Office Hours:<br>Mon–Fri: 9:00am – 5:00pm</p>
     </div>
-  </footer>
+
+    <!-- Column 3: Navigation -->
+    <div class="footer-column">
+      <h3>Navigation</h3>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#team">Team</a>
+      <a href="#careers">Careers</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Column 4: Google Maps -->
+    <div class="footer-column footer-map">
+      <h3>Find Us</h3>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.7574021439826!2d76.89762457501758!3d12.520889424184288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bafd7bc6b24dc9b%3A0x43d6a9f37df8e0a!2sMandya%20Institute%20Of%20Medical%20Sciences!5e0!3m2!1sen!2sin!4v1689998765013!5m2!1sen!2sin" 
+        width="100%" 
+        height="200" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Manmed Dynamics. All rights reserved.</p>
+  </div>
+</footer>
 
 <!-- Before closing </body> -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
